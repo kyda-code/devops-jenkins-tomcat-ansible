@@ -1,0 +1,14 @@
+# Here are variables related to the Tomcat installation
+
+http_port: 9080
+https_port: 9443
+
+# This will configure a default manager-gui user:
+
+admin_username: admin
+admin_password: adminsecret
+
+tomcat_group: tomcat
+tomcat_user: tomcat
+
+username: jenkins
