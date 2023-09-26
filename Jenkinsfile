@@ -10,7 +10,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'https://github.com/kyda-code/devops-jenkins-tomcat-ansible.git'
+                git branch: 'main', url: 'https://github.com/kyda-code/devops-jenkins-tomcat-ansible.git'
              
           }
         }
