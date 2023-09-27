@@ -7,4 +7,4 @@
     - include_role:
         name: tomcat
   vars:
-    ansible_become_pass: "{{ root_pass_sirius }}"
+    ansible_become_pass: "{{ root_pass_jenkins }}"
