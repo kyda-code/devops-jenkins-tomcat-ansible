@@ -36,7 +36,7 @@
 
 
   notify: restart tomcat
-  
+
 
 - name: Change ownership
   file:
@@ -58,7 +58,7 @@
     name: tomcat
     state: started
     enabled: true
-      daemon_reload: true
+    daemon_reload: true
 
 - name: wait for tomcat to start
   wait_for: port={{http_port}}
