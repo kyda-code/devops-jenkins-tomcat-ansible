@@ -12,3 +12,4 @@ tomcat_group: tomcat
 tomcat_user: tomcat
 
 username: jenkins
+root_pass_jenkins: jenkins123$

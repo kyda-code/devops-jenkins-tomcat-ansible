@@ -2,9 +2,8 @@
 - hosts: all
   become: true
   become_user: root
-  become_password: jenkins123$
+  become_pass: "{{ root_pass_jenkins }}"
   gather_facts: false
   tasks:
     - include_role:
         name: tomcat
-      
