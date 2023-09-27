@@ -2,7 +2,7 @@
 - hosts: all
   become: true
   become_user: root
-  become_pass: jenkins123$
+  become_password: jenkins123$
   gather_facts: false
   tasks:
     - include_role:
