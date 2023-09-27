@@ -41,7 +41,11 @@
   copy: src=tomcat-initscript.sh dest=/etc/init.d/tomcat mode=0755
 
 - name: Start Tomcat
-  systemd: name=tomcat state=started enabled=yes
+  ansible.builtin.systemd_service:
+    state: started
+    name: tomcat
+    enabled: true
+
 
 - name: wait for tomcat to start
   wait_for: port={{http_port}}
